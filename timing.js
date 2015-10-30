@@ -11,7 +11,7 @@ Clock.prototype.printTime = function() {
 Clock.prototype.run = function() {
   this.currentTime = new Date();
   this.printTime();
-    window.setInterval(this._tick.bind(this), 5000);
+    setInterval(this._tick.bind(this), 5000);
   }
 
 Clock.prototype._tick = function() {
